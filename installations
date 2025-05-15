@@ -1,0 +1,4 @@
+first install kubernets:
+launch instance - instance is 86*64 amd64 { check ami is which type and copy realted link} as shown below
+ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+ 
