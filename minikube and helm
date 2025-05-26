@@ -1,0 +1,15 @@
+install kubectl and chmod +x kubectl
+sudo mv kubectl /usr/local/bin/   run those 2 commands.
+ Install Minikube:
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+minikube version
+ Install conntrack (required by Minikube):
+sudo yum install -y conntrack
+minikube start --driver=docker
+Check Minikube status:
+minikube status
+kubectl get nodes
+Download and install Helm:
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+helm version
